@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Три шрифти для польського алфавіту</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat-Black';
+            src: url('./fonts/Montserrat-Black.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-BlackItalic';
+            src: url('./fonts/Montserrat-BlackItalic.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-Bold';
+            src: url('./fonts/Montserrat-Bold.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-BoldItalic';
+            src: url('./fonts/Montserrat-BoldItalic.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-ExtraBoldItalic';
+            src: url('./fonts/Montserrat-ExtraBoldItalic.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-ExtraLightItalic';
+            src: url('./fonts/Montserrat-ExtraLightItalic.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-Italic';
+            src: url('./fonts/Montserrat-Italic.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-Light';
+            src: url('./fonts/Montserrat-Light.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-LightItalic';
+            src: url('./fonts/Montserrat-LightItalic.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-Medium';
+            src: url('./fonts/Montserrat-Medium.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-MediumItalic';
+            src: url('./fonts/Montserrat-MediumItalic.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-Regular';
+            src: url('./fonts/Montserrat-Regular.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-SemiBold';
+            src: url('./fonts/Montserrat-SemiBold.otf');
+        }
+
+        @font-face {
+            font-family: 'Montserrat-SemiBoldItalic';
+            src: url('./fonts/Montserrat-SemiBoldItalic.otf');
+        }
+
+
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .font1 {
+            font-family: 'Montserrat-Black', sans-serif;
+        }
+
+        .font2 {
+            font-family: 'Montserrat-BlackItalic', sans-serif;
+        }
+
+        .font3 {
+            font-family: 'Montserrat-Bold', sans-serif;
+        }
+
+        .font4 {
+            font-family: 'Montserrat-BoldItalic', sans-serif;
+        }
+
+        .font5 {
+            font-family: 'Montserrat-ExtraBoldItalic', sans-serif;
+        }
+
+        .font6 {
+            font-family: 'Montserrat-ExtraLightItalic', sans-serif;
+        }
+
+        .font7 {
+            font-family: 'Montserrat-Italic', sans-serif;
+        }
+
+        .font8 {
+            font-family: 'Montserrat-Light', sans-serif;
+        }
+
+        .font9 {
+            font-family: 'Montserrat-LightItalic', sans-serif;
+        }
+
+        .font10 {
+            font-family: 'Montserrat-Medium', sans-serif;
+        }
+
+        .font11 {
+            font-family: 'Montserrat-MediumItalic', sans-serif;
+        }
+
+        .font12 {
+            font-family: 'Montserrat-Regular', sans-serif;
+        }
+
+        .font13 {
+            font-family: 'Montserrat-SemiBold', sans-serif;
+        }
+
+        .font14 {
+            font-family: 'Montserrat-SemiBoldItalic', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Fonts</h1>
+<div id="root"></div>
+<script>
+    (() => {
+        const root = document.querySelector("#root");
+        for (let i = 1; i < 15; i++) {
+            root.insertAdjacentHTML("afterbegin", `
+                <p class="font${i}">
+                    a, ą, b, c, ć, d, e, ę, f, g, h, i, j, k, l, ł, m, n, ń, o, ó, p, r, s, ś, t, u, w, y, z, ź, ż,<br>
+                    A, Ą, B, C, Ć, D, E, Ę, F, G, H, I, J, K, L, Ł, M, N, Ń, O, Ó, P, R, S, Ś, T, U, W, Y, Z, Ź, Ż
+                </p>
+            `);
+        }
+    })()</script>
+</body>
+</html>
